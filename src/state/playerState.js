@@ -21,7 +21,7 @@ export const playerState = atom({
     dmgMax: 30,
     crit: 1.5,
     critChance: 5,
-    speed: 500,
+    speed: 100,
     hitChance: 50,
     armor: 90,
     resist: 5,

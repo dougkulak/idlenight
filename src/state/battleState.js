@@ -8,6 +8,6 @@ export const battleState = atom({
     enemyIsAttacking: false,
     playerAttackDuration: 500,
     playerAttackCooldown: 2000,
-    delayBetweenBattles: 500,
+    delayBetweenBattles: 2000,
   },
 });
