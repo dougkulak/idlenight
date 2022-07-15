@@ -1,0 +1,34 @@
+[
+  {
+    "level": 1,
+    "name": "A little rabbit",
+    "hp": 30,
+    "dmgMin": "1",
+    "dmgMax": "3",
+    "ascii": "rabbit.txt"
+  },
+  {
+    "level": 1,
+    "name": "A small frog",
+    "hp": 30,
+    "dmgMin": "2",
+    "dmgMax": "4",
+    "ascii": "frog.txt"
+  },
+  {
+    "level": 1,
+    "name": "A tiny turtle",
+    "hp": 35,
+    "dmgMin": "1",
+    "dmgMax": "4",
+    "ascii": "turtle.txt"
+  },
+  {
+    "level": 2,
+    "name": "A spooked spider",
+    "hp": 50,
+    "dmgMin": "3",
+    "dmgMax": "6",
+    "ascii": "spider.txt"
+  }
+]
