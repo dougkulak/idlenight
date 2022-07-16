@@ -36,6 +36,7 @@ export function Enemy() {
           max={enemy.hpMax}
           value={enemy.hp}
           height={'15px'}
+          borderRadius={'md'}
           colorScheme={'red'}>
           <ProgressLabel
             style={{

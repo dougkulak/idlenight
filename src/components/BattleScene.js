@@ -129,6 +129,7 @@ export function BattleScene() {
         y.mp = y.mpMax;
         y.xpMax = xpToLevel[y.level - 1];
         y.xp = 0;
+        y.avail += 5;
 
         return y;
       });
@@ -196,34 +197,36 @@ export function BattleScene() {
 
   return (
     <>
-      <Box
-        borderRadius={'md'}
-        sx={{
-          backgroundImage: bg,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          display: 'flex',
-          alignItems: 'end',
-          justifyContent: 'space-between',
-          minHeight: 250,
-          width: '100%',
-        }}>
+      <Box p={1} bg={'black'} borderRadius={'md'}>
         <Box
-          padding={4}
-          style={{
+          borderRadius={'md'}
+          sx={{
+            backgroundImage: bg,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
             display: 'flex',
+            alignItems: 'end',
             justifyContent: 'space-between',
+            minHeight: 250,
             width: '100%',
           }}>
-          <HStack
-            spacing={2}
-            justifyContent={'space-between'}
+          <Box
+            padding={4}
             style={{
+              display: 'flex',
+              justifyContent: 'space-between',
               width: '100%',
             }}>
-            <Player />
-            <Enemy />
-          </HStack>
+            <HStack
+              spacing={2}
+              justifyContent={'space-between'}
+              style={{
+                width: '100%',
+              }}>
+              <Player />
+              <Enemy />
+            </HStack>
+          </Box>
         </Box>
       </Box>
     </>

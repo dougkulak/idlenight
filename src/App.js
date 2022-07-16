@@ -14,8 +14,25 @@ import {MessageLog} from './components/MessageLog';
 import {Equipment} from './components/Equipment';
 import {FullStatistics} from './components/FullStatistics';
 import {Container} from '@chakra-ui/react';
+import {config} from './config';
+import {useEffect} from 'react';
+import {useSetRecoilState} from 'recoil';
+import {gameState} from './state/gameState';
 
 function App() {
+  const setGame = useSetRecoilState(gameState);
+
+  useEffect(() => {
+    const gameLoop = setInterval(() => {
+      // main game loop
+      setGame((x) => ({...x, timeElapsed: x.timeElapsed + config.tickTime}));
+    }, config.tickTime);
+
+    return () => {
+      clearInterval(gameLoop);
+    };
+  }, []); //esline-disable-line
+
   return (
     <Container maxW={'container.lg'}>
       <Content

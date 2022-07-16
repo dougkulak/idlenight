@@ -1,6 +1,7 @@
 import {Box, Progress, ProgressLabel, VStack} from '@chakra-ui/react';
 import {useRecoilValue} from 'recoil';
 import {playerState} from '../state/playerState';
+import {Resources} from './Resources';
 
 function HealthBar({val, max}) {
   return (
@@ -70,10 +71,11 @@ export function Status() {
 
   return (
     <Box flex={1} p={1}>
-      <VStack spacing={1}>
+      <VStack spacing={1} alignItems={'flex-start'}>
         <HealthBar val={player.hp} max={player.hpMax} />
         <ManaBar val={player.hp} max={player.hpMax} />
         <XpBar val={player.xp} max={player.xpMax} />
+        <Resources />
       </VStack>
     </Box>
   );

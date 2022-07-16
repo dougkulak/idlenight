@@ -48,6 +48,7 @@ export function Player() {
           max={player.hpMax}
           value={player.hp}
           height={'15px'}
+          borderRadius={'md'}
           colorScheme={'red'}>
           <ProgressLabel
             style={{

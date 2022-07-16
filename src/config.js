@@ -1,4 +1,4 @@
 export const config = {
   appName: 'Idle Night',
-  framerate: 20,
+  tickTime: 1000 / 20,
 };
