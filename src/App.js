@@ -31,7 +31,7 @@ function App() {
     return () => {
       clearInterval(gameLoop);
     };
-  }, []); //esline-disable-line
+  }, []); //eslint-disable-line
 
   return (
     <Container maxW={'container.lg'}>
