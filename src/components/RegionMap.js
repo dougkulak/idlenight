@@ -1,12 +1,9 @@
-import {Box, Flex, SimpleGrid, Text} from '@chakra-ui/react';
-import {regionState} from '../state/regionState';
-import {useRecoilState, useRecoilValue} from 'recoil';
+import {Box, SimpleGrid, Text} from '@chakra-ui/react';
+import {useRecoilValue} from 'recoil';
 import {useEffect, useState} from 'react';
 import {enemyState} from '../state/enemyState';
 
 export function RegionMap() {
-  const [region, setRegion] = useRecoilState(regionState);
-
   const enemy = useRecoilValue(enemyState);
 
   const numCols = 10;
